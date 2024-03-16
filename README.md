@@ -1,6 +1,10 @@
 ## 工学云蘑菇钉每日签到
 
 
+### 非常感谢 [工学云项目](https://github.com/github123666/gonxueyun)
+>> 本项目在  [工学云项目](https://github.com/github123666/gonxueyun)的项目基础上进行了封装
+
+
 <!-- TOC -->
   * [工学云蘑菇钉每日签到](#工学云蘑菇钉每日签到)
   * [Star History](#star-history)
