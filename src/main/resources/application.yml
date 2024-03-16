@@ -1,0 +1,51 @@
+# 请求服务配置
+forest:
+  async-mode: platform
+  connect-timeout: 300000
+  read-timeout: 300000
+  timeout: 300000
+  variables:
+    apiKey: ''
+    mogudingApi: 'https://api.moguding.net:9000'
+    userAgent: ''
+  log-enabled: false
+  log-response-status: false
+
+spring:
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ""
+    password: ""
+    url: jdbc:mysql://url:3306/autosign
+
+  #发送邮件
+  mail:
+    host: smtp.163.com
+    username: simbot@163.com
+    password: as
+    default-encoding: UTF-8
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+            required: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+          port: 465
+          timeout: 5000
+# mybatis-plus配置
+mybatis-plus:
+  #  configuration:
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    root: info
